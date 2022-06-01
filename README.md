@@ -1,0 +1,1 @@
+![Photo 1](https://github.com/drakumus/Skylight/blob/master/photos/IMG_1967.png)
