@@ -1,0 +1,6 @@
+[submodule "kicad files/libraries/Keebio-Parts.pretty"]
+	path = kicad files/libraries/Keebio-Parts.pretty
+	url = https://github.com/keebio/Keebio-Parts.pretty.git
+[submodule "kicad files/libraries/ProMicroKiCad"]
+	path = kicad files/libraries/ProMicroKiCad
+	url = https://github.com/Biacco42/ProMicroKiCad.git

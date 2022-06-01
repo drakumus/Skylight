@@ -1,0 +1,2110 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATmega:ATmega32A-PU U1
+U 1 1 623E355E
+P 2100 2800
+F 0 "U1" H 2100 711 50  0000 C CNN
+F 1 "ATmega32A-PU" H 2100 2800 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm" H 2100 2800 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-8155-8-bit-microcontroller-avr-atmega32a_datasheet.pdf" H 2100 2800 50  0001 C CNN
+	1    2100 2800
+	1    0    0    -1  
+$EndComp
+Text GLabel 2700 4500 2    50   Input ~ 0
+col0
+Text GLabel 2700 3100 2    50   Input ~ 0
+col1
+Text GLabel 2700 3300 2    50   Input ~ 0
+col3
+Text GLabel 2700 3200 2    50   Input ~ 0
+col2
+Text GLabel 2700 1800 2    50   Input ~ 0
+row0
+Text GLabel 2700 1700 2    50   Input ~ 0
+row1
+Text GLabel 2700 1600 2    50   Input ~ 0
+row2
+Text GLabel 2700 1500 2    50   Input ~ 0
+row3
+Text GLabel 2700 1400 2    50   Input ~ 0
+row4
+Wire Wire Line
+	2200 800  2200 700 
+Wire Wire Line
+	2200 700  2100 700 
+Wire Wire Line
+	2100 700  2100 800 
+Text GLabel 1500 1100 0    50   Input ~ 0
+reset
+Text GLabel 2700 2100 2    50   Input ~ 0
+b1
+Text GLabel 2700 2200 2    50   Input ~ 0
+b2
+$Comp
+L Device:R R1
+U 1 1 6243A4E9
+P 2850 4000
+F 0 "R1" V 2750 4000 50  0000 C CNN
+F 1 "68R" V 2850 4000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2780 4000 50  0001 C CNN
+F 3 "~" H 2850 4000 50  0001 C CNN
+	1    2850 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 6243B891
+P 2850 4100
+F 0 "R2" V 2950 4100 50  0000 C CNN
+F 1 "68R" V 2850 4100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2780 4100 50  0001 C CNN
+F 3 "~" H 2850 4100 50  0001 C CNN
+	1    2850 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J2
+U 1 1 6244E827
+P 1000 2300
+F 0 "J2" H 1050 2600 50  0000 C CNN
+F 1 "JTAG" H 1050 2000 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 1000 2300 50  0001 C CNN
+F 3 "~" H 1000 2300 50  0001 C CNN
+	1    1000 2300
+	1    0    0    -1  
+$EndComp
+Text GLabel 2700 3400 2    50   Input ~ 0
+col4
+Text GLabel 800  2500 0    50   Input ~ 0
+col4
+Text GLabel 800  2200 0    50   Input ~ 0
+col3
+Text GLabel 800  2300 0    50   Input ~ 0
+col2
+Text GLabel 800  2100 0    50   Input ~ 0
+col1
+Text GLabel 1300 2300 2    50   Input ~ 0
+reset
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J3
+U 1 1 624576A8
+P 1000 3200
+F 0 "J3" H 1050 3400 50  0000 C CNN
+F 1 "ISP" H 1050 3000 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 1000 3200 50  0001 C CNN
+F 3 "~" H 1000 3200 50  0001 C CNN
+	1    1000 3200
+	1    0    0    -1  
+$EndComp
+Text GLabel 2700 2500 2    50   Input ~ 0
+MOSI
+Text GLabel 2700 2600 2    50   Input ~ 0
+MISO
+Text GLabel 2700 2700 2    50   Input ~ 0
+SCK
+Text GLabel 1300 3200 2    50   Input ~ 0
+MOSI
+Text GLabel 800  3100 0    50   Input ~ 0
+MISO
+Text GLabel 800  3200 0    50   Input ~ 0
+SCK
+Text GLabel 800  3300 0    50   Input ~ 0
+reset
+Wire Wire Line
+	3650 4850 4450 4850
+$Comp
+L Device:D_Small D15
+U 1 1 623DD2D1
+P 4450 4750
+F 0 "D15" V 4450 4682 50  0000 R CNN
+F 1 "D_Small" V 4405 4682 50  0001 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 4450 4750 50  0001 C CNN
+F 3 "~" V 4450 4750 50  0001 C CNN
+	1    4450 4750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4450 4550 4450 4650
+$Comp
+L Device:D_Small D16
+U 1 1 623B4701
+P 4950 4750
+F 0 "D16" V 4950 4682 50  0000 R CNN
+F 1 "D_Small" V 4905 4682 50  0001 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 4950 4750 50  0001 C CNN
+F 3 "~" V 4950 4750 50  0001 C CNN
+	1    4950 4750
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5700 1150
+Wire Wire Line
+	5700 850  5700 1150
+Connection ~ 5200 1150
+Wire Wire Line
+	5200 850  5200 1150
+Connection ~ 4700 1150
+Wire Wire Line
+	4700 850  4700 1150
+Connection ~ 4200 1150
+Wire Wire Line
+	4200 850  4200 1150
+Connection ~ 4450 3250
+Connection ~ 3950 3250
+Wire Wire Line
+	3950 3250 4450 3250
+Wire Wire Line
+	3650 3250 3950 3250
+Connection ~ 4450 4050
+Wire Wire Line
+	4450 4050 4950 4050
+Connection ~ 3950 4050
+Wire Wire Line
+	3950 4050 4450 4050
+Wire Wire Line
+	3650 4050 3950 4050
+Wire Wire Line
+	5700 1150 5650 1150
+Connection ~ 5200 1950
+Connection ~ 5200 2750
+Wire Wire Line
+	5200 2750 5200 1950
+Connection ~ 5200 3550
+Wire Wire Line
+	5200 4350 5200 3550
+Wire Wire Line
+	5150 4350 5200 4350
+Wire Wire Line
+	5200 3550 5150 3550
+Wire Wire Line
+	5200 2750 5200 3550
+Wire Wire Line
+	5150 2750 5200 2750
+Wire Wire Line
+	5200 1950 5150 1950
+Wire Wire Line
+	5200 1150 5200 1950
+Wire Wire Line
+	5200 1150 5150 1150
+Connection ~ 4700 3550
+Wire Wire Line
+	4700 4350 4650 4350
+Wire Wire Line
+	4700 3550 4700 4350
+Connection ~ 4700 2750
+Wire Wire Line
+	4700 3550 4650 3550
+Wire Wire Line
+	4700 2750 4700 3550
+Connection ~ 4700 1950
+Wire Wire Line
+	4700 2750 4650 2750
+Wire Wire Line
+	4700 1950 4700 2750
+Wire Wire Line
+	4700 1950 4650 1950
+Wire Wire Line
+	4700 1150 4700 1950
+Wire Wire Line
+	4650 1150 4700 1150
+Connection ~ 4200 2750
+Wire Wire Line
+	4200 3550 4150 3550
+Wire Wire Line
+	4200 2750 4200 3550
+Wire Wire Line
+	4150 2750 4200 2750
+Connection ~ 4200 1950
+Wire Wire Line
+	4200 1950 4200 2750
+Wire Wire Line
+	4200 1950 4150 1950
+Wire Wire Line
+	4200 1150 4200 1950
+Wire Wire Line
+	4150 1150 4200 1150
+Connection ~ 4450 2450
+Wire Wire Line
+	4450 2450 4950 2450
+Connection ~ 3950 2450
+Wire Wire Line
+	3950 2450 4450 2450
+Wire Wire Line
+	3650 2450 3950 2450
+Connection ~ 4950 1650
+Wire Wire Line
+	4950 1650 5450 1650
+Connection ~ 4450 1650
+Wire Wire Line
+	4450 1650 4950 1650
+Connection ~ 3950 1650
+Wire Wire Line
+	3950 1650 4450 1650
+Wire Wire Line
+	3650 1650 3950 1650
+Text GLabel 3650 4850 0    50   Input ~ 0
+row4
+Text GLabel 3650 4050 0    50   Input ~ 0
+row3
+Text GLabel 3650 3250 0    50   Input ~ 0
+row2
+Text GLabel 3650 2450 0    50   Input ~ 0
+row1
+Wire Wire Line
+	4950 4550 4950 4650
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX_DOT1
+U 1 1 623B46FB
+P 5000 4400
+F 0 "MX_DOT1" H 5033 4623 60  0000 C CNN
+F 1 "MX-NoLED" H 5033 4549 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 4375 4375 60  0001 C CNN
+F 3 "" H 4375 4375 60  0001 C CNN
+	1    5000 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX_0
+U 1 1 623B392A
+P 4500 4400
+F 0 "MX_0" H 4533 4623 60  0000 C CNN
+F 1 "MX-NoLED" H 4533 4549 20  0000 C CNN
+F 2 "MX_Only:MXOnly-2U-Hotswap" H 3875 4375 60  0001 C CNN
+F 3 "" H 3875 4375 60  0001 C CNN
+	1    4500 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 3750 5500 3850
+$Comp
+L Device:D_Small D14
+U 1 1 623AA724
+P 5500 3950
+F 0 "D14" V 5500 3882 50  0000 R CNN
+F 1 "D_Small" V 5455 3882 50  0001 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 5500 3950 50  0001 C CNN
+F 3 "~" V 5500 3950 50  0001 C CNN
+	1    5500 3950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4950 3750 4950 3850
+$Comp
+L Device:D_Small D13
+U 1 1 623AA71D
+P 4950 3950
+F 0 "D13" V 4950 3882 50  0000 R CNN
+F 1 "D_Small" V 4905 3882 50  0001 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 4950 3950 50  0001 C CNN
+F 3 "~" V 4950 3950 50  0001 C CNN
+	1    4950 3950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4450 3750 4450 3850
+$Comp
+L Device:D_Small D12
+U 1 1 623AA716
+P 4450 3950
+F 0 "D12" V 4450 3882 50  0000 R CNN
+F 1 "D_Small" V 4405 3882 50  0001 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 4450 3950 50  0001 C CNN
+F 3 "~" V 4450 3950 50  0001 C CNN
+	1    4450 3950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3950 3750 3950 3850
+$Comp
+L Device:D_Small D11
+U 1 1 623AA70F
+P 3950 3950
+F 0 "D11" V 3950 3882 50  0000 R CNN
+F 1 "D_Small" V 3905 3882 50  0001 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 3950 3950 50  0001 C CNN
+F 3 "~" V 3950 3950 50  0001 C CNN
+	1    3950 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX_3
+U 1 1 623AA703
+P 5000 3600
+F 0 "MX_3" H 5033 3823 60  0000 C CNN
+F 1 "MX-NoLED" H 5033 3749 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 4375 3575 60  0001 C CNN
+F 3 "" H 4375 3575 60  0001 C CNN
+	1    5000 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX_2
+U 1 1 623AA6FD
+P 4500 3600
+F 0 "MX_2" H 4533 3823 60  0000 C CNN
+F 1 "MX-NoLED" H 4533 3749 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 3875 3575 60  0001 C CNN
+F 3 "" H 3875 3575 60  0001 C CNN
+	1    4500 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX_1
+U 1 1 623AA6F7
+P 4000 3600
+F 0 "MX_1" H 4033 3823 60  0000 C CNN
+F 1 "MX-NoLED" H 4033 3749 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 3375 3575 60  0001 C CNN
+F 3 "" H 3375 3575 60  0001 C CNN
+	1    4000 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 2150 5450 2250
+$Comp
+L Device:D_Small D7
+U 1 1 623A30E2
+P 5450 2350
+F 0 "D7" V 5450 2282 50  0000 R CNN
+F 1 "D_Small" V 5405 2282 50  0001 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 5450 2350 50  0001 C CNN
+F 3 "~" V 5450 2350 50  0001 C CNN
+	1    5450 2350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4950 2950 4950 3050
+$Comp
+L Device:D_Small D10
+U 1 1 623A30DB
+P 4950 3150
+F 0 "D10" V 4950 3082 50  0000 R CNN
+F 1 "D_Small" V 4905 3082 50  0001 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 4950 3150 50  0001 C CNN
+F 3 "~" V 4950 3150 50  0001 C CNN
+	1    4950 3150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4450 2950 4450 3050
+$Comp
+L Device:D_Small D9
+U 1 1 623A30D4
+P 4450 3150
+F 0 "D9" V 4450 3082 50  0000 R CNN
+F 1 "D_Small" V 4405 3082 50  0001 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 4450 3150 50  0001 C CNN
+F 3 "~" V 4450 3150 50  0001 C CNN
+	1    4450 3150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3950 2950 3950 3050
+$Comp
+L Device:D_Small D8
+U 1 1 623A30CD
+P 3950 3150
+F 0 "D8" V 3950 3082 50  0000 R CNN
+F 1 "D_Small" V 3905 3082 50  0001 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 3950 3150 50  0001 C CNN
+F 3 "~" V 3950 3150 50  0001 C CNN
+	1    3950 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX_ADD1
+U 1 1 623A30C7
+P 5500 2000
+F 0 "MX_ADD1" H 5533 2223 60  0000 C CNN
+F 1 "MX-NoLED" H 5533 2149 20  0000 C CNN
+F 2 "MX_Only:MXOnly-2U-Hotswap" H 4875 1975 60  0001 C CNN
+F 3 "" H 4875 1975 60  0001 C CNN
+	1    5500 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX_6
+U 1 1 623A30C1
+P 5000 2800
+F 0 "MX_6" H 5033 3023 60  0000 C CNN
+F 1 "MX-NoLED" H 5033 2949 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 4375 2775 60  0001 C CNN
+F 3 "" H 4375 2775 60  0001 C CNN
+	1    5000 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX_5
+U 1 1 623A30BB
+P 4500 2800
+F 0 "MX_5" H 4533 3023 60  0000 C CNN
+F 1 "MX-NoLED" H 4533 2949 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 3875 2775 60  0001 C CNN
+F 3 "" H 3875 2775 60  0001 C CNN
+	1    4500 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX_4
+U 1 1 623A30B5
+P 4000 2800
+F 0 "MX_4" H 4033 3023 60  0000 C CNN
+F 1 "MX-NoLED" H 4033 2949 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 3375 2775 60  0001 C CNN
+F 3 "" H 3375 2775 60  0001 C CNN
+	1    4000 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2150 4950 2250
+$Comp
+L Device:D_Small D6
+U 1 1 6239DF29
+P 4950 2350
+F 0 "D6" V 4950 2282 50  0000 R CNN
+F 1 "D_Small" V 4905 2282 50  0001 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 4950 2350 50  0001 C CNN
+F 3 "~" V 4950 2350 50  0001 C CNN
+	1    4950 2350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4450 2150 4450 2250
+$Comp
+L Device:D_Small D5
+U 1 1 6239DF22
+P 4450 2350
+F 0 "D5" V 4450 2282 50  0000 R CNN
+F 1 "D_Small" V 4405 2282 50  0001 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 4450 2350 50  0001 C CNN
+F 3 "~" V 4450 2350 50  0001 C CNN
+	1    4450 2350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3950 2150 3950 2250
+$Comp
+L Device:D_Small D4
+U 1 1 6239DF1B
+P 3950 2350
+F 0 "D4" V 3950 2282 50  0000 R CNN
+F 1 "D_Small" V 3905 2282 50  0001 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 3950 2350 50  0001 C CNN
+F 3 "~" V 3950 2350 50  0001 C CNN
+	1    3950 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX_9
+U 1 1 6239DF0F
+P 5000 2000
+F 0 "MX_9" H 5033 2223 60  0000 C CNN
+F 1 "MX-NoLED" H 5033 2149 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 4375 1975 60  0001 C CNN
+F 3 "" H 4375 1975 60  0001 C CNN
+	1    5000 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX_8
+U 1 1 6239DF09
+P 4500 2000
+F 0 "MX_8" H 4533 2223 60  0000 C CNN
+F 1 "MX-NoLED" H 4533 2149 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 3875 1975 60  0001 C CNN
+F 3 "" H 3875 1975 60  0001 C CNN
+	1    4500 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX_7
+U 1 1 6239DF03
+P 4000 2000
+F 0 "MX_7" H 4033 2223 60  0000 C CNN
+F 1 "MX-NoLED" H 4033 2149 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 3375 1975 60  0001 C CNN
+F 3 "" H 3375 1975 60  0001 C CNN
+	1    4000 2000
+	1    0    0    -1  
+$EndComp
+Text GLabel 3650 1650 0    50   Input ~ 0
+row0
+Wire Wire Line
+	5450 1350 5450 1450
+$Comp
+L Device:D_Small D3
+U 1 1 6238BA5F
+P 5450 1550
+F 0 "D3" V 5450 1482 50  0000 R CNN
+F 1 "D_Small" V 5405 1482 50  0001 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 5450 1550 50  0001 C CNN
+F 3 "~" V 5450 1550 50  0001 C CNN
+	1    5450 1550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4950 1350 4950 1450
+$Comp
+L Device:D_Small D2
+U 1 1 6238B317
+P 4950 1550
+F 0 "D2" V 4950 1482 50  0000 R CNN
+F 1 "D_Small" V 4905 1482 50  0001 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 4950 1550 50  0001 C CNN
+F 3 "~" V 4950 1550 50  0001 C CNN
+	1    4950 1550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4450 1350 4450 1450
+$Comp
+L Device:D_Small D1
+U 1 1 6238ACB9
+P 4450 1550
+F 0 "D1" V 4450 1482 50  0000 R CNN
+F 1 "D_Small" V 4405 1482 50  0001 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 4450 1550 50  0001 C CNN
+F 3 "~" V 4450 1550 50  0001 C CNN
+	1    4450 1550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3950 1350 3950 1450
+$Comp
+L Device:D_Small D0
+U 1 1 623867B9
+P 3950 1550
+F 0 "D0" V 3950 1482 50  0000 R CNN
+F 1 "D_Small" V 3905 1482 50  0001 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 3950 1550 50  0001 C CNN
+F 3 "~" V 3950 1550 50  0001 C CNN
+	1    3950 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX_SUB1
+U 1 1 623860BE
+P 5500 1200
+F 0 "MX_SUB1" H 5533 1423 60  0000 C CNN
+F 1 "MX-NoLED" H 5533 1349 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 4875 1175 60  0001 C CNN
+F 3 "" H 4875 1175 60  0001 C CNN
+	1    5500 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX_MULT1
+U 1 1 623854EF
+P 5000 1200
+F 0 "MX_MULT1" H 5033 1423 60  0000 C CNN
+F 1 "MX-NoLED" H 5033 1349 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 4375 1175 60  0001 C CNN
+F 3 "" H 4375 1175 60  0001 C CNN
+	1    5000 1200
+	1    0    0    -1  
+$EndComp
+Text GLabel 5700 850  1    50   Input ~ 0
+col3
+Text GLabel 5200 850  1    50   Input ~ 0
+col2
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX_DIVIDE1
+U 1 1 62380D0C
+P 4500 1200
+F 0 "MX_DIVIDE1" H 4533 1423 60  0000 C CNN
+F 1 "MX-NoLED" H 4533 1349 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 3875 1175 60  0001 C CNN
+F 3 "" H 3875 1175 60  0001 C CNN
+	1    4500 1200
+	1    0    0    -1  
+$EndComp
+Text GLabel 4700 850  1    50   Input ~ 0
+col1
+Text GLabel 4200 850  1    50   Input ~ 0
+col0
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX_NUM1
+U 1 1 623792C3
+P 4000 1200
+F 0 "MX_NUM1" H 4033 1423 60  0000 C CNN
+F 1 "MX-NoLED" H 4033 1349 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 3375 1175 60  0001 C CNN
+F 3 "" H 3375 1175 60  0001 C CNN
+	1    4000 1200
+	1    0    0    -1  
+$EndComp
+Text GLabel 2700 2300 2    50   Input ~ 0
+b3
+Text GLabel 2700 2400 2    50   Input ~ 0
+b4
+Text GLabel 6000 3050 0    50   Input ~ 0
+b2
+Text GLabel 6000 2950 0    50   Input ~ 0
+b1
+$Comp
+L Device:D_Small D17
+U 1 1 6252D610
+P 5900 3250
+F 0 "D17" V 5900 3182 50  0000 R CNN
+F 1 "D_Small" V 5855 3182 50  0001 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 5900 3250 50  0001 C CNN
+F 3 "~" V 5900 3250 50  0001 C CNN
+	1    5900 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D18
+U 1 1 62576ED9
+P 5800 4850
+F 0 "D18" H 5800 4963 50  0000 C CNN
+F 1 "D_Small" V 5755 4782 50  0001 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 5800 4850 50  0001 C CNN
+F 3 "~" V 5800 4850 50  0001 C CNN
+	1    5800 4850
+	1    0    0    -1  
+$EndComp
+Connection ~ 4950 2450
+$Comp
+L planck-thk-cache:+5V #PWR0110
+U 1 1 625E09DD
+P 1300 2200
+F 0 "#PWR0110" H 1300 2050 50  0001 C CNN
+F 1 "+5V" V 1300 2300 50  0000 L CNN
+F 2 "" H 1300 2200 50  0001 C CNN
+F 3 "" H 1300 2200 50  0001 C CNN
+	1    1300 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L planck-thk-cache:+5V #PWR0112
+U 1 1 625E189F
+P 1300 3100
+F 0 "#PWR0112" H 1300 2950 50  0001 C CNN
+F 1 "+5V" V 1300 3200 50  0000 L CNN
+F 2 "" H 1300 3100 50  0001 C CNN
+F 3 "" H 1300 3100 50  0001 C CNN
+	1    1300 3100
+	0    1    1    0   
+$EndComp
+Text GLabel 3000 4000 2    50   Input ~ 0
+D+
+Text GLabel 3000 4100 2    50   Input ~ 0
+D-
+NoConn ~ 1300 2400
+NoConn ~ 800  2400
+NoConn ~ 2700 3500
+NoConn ~ 2700 2000
+NoConn ~ 2700 1300
+NoConn ~ 2700 1200
+NoConn ~ 2700 1100
+NoConn ~ 2700 4300
+NoConn ~ 2700 4200
+NoConn ~ 2700 3900
+NoConn ~ 2700 3800
+NoConn ~ 1500 1700
+$Comp
+L power:+5V #PWR0156
+U 1 1 62779228
+P 2100 700
+F 0 "#PWR0156" H 2100 550 50  0001 C CNN
+F 1 "+5V" H 2115 873 50  0000 C CNN
+F 2 "" H 2100 700 50  0001 C CNN
+F 3 "" H 2100 700 50  0001 C CNN
+	1    2100 700 
+	1    0    0    -1  
+$EndComp
+Connection ~ 2100 700 
+Text GLabel 7700 1350 0    50   Input ~ 0
+RGB_LEDR0to1
+Text GLabel 11000 1150 2    50   Input ~ 0
+RGB_LED_DAT
+NoConn ~ 2700 3000
+NoConn ~ 2700 2900
+NoConn ~ 2700 4400
+Wire Wire Line
+	5450 2450 4950 2450
+Wire Wire Line
+	5650 1950 5700 1950
+Connection ~ 5700 1950
+Wire Wire Line
+	5500 4050 4950 4050
+Connection ~ 4950 4050
+$Comp
+L power:GND #PWR0135
+U 1 1 62A1FEB2
+P 2100 4800
+F 0 "#PWR0135" H 2100 4550 50  0001 C CNN
+F 1 "GND" H 2105 4627 50  0000 C CNN
+F 2 "" H 2100 4800 50  0001 C CNN
+F 3 "" H 2100 4800 50  0001 C CNN
+	1    2100 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0136
+U 1 1 62A23B7C
+P 1300 2500
+F 0 "#PWR0136" H 1300 2250 50  0001 C CNN
+F 1 "GND" V 1305 2372 50  0000 R CNN
+F 2 "" H 1300 2500 50  0001 C CNN
+F 3 "" H 1300 2500 50  0001 C CNN
+	1    1300 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0137
+U 1 1 62A25108
+P 1300 3300
+F 0 "#PWR0137" H 1300 3050 50  0001 C CNN
+F 1 "GND" V 1305 3172 50  0000 R CNN
+F 2 "" H 1300 3300 50  0001 C CNN
+F 3 "" H 1300 3300 50  0001 C CNN
+	1    1300 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 6238F69D
+P 6500 4250
+F 0 "#PWR0104" H 6500 4000 50  0001 C CNN
+F 1 "GND" H 6505 4077 50  0000 C CNN
+F 2 "" H 6500 4250 50  0001 C CNN
+F 3 "" H 6500 4250 50  0001 C CNN
+	1    6500 4250
+	-1   0    0    1   
+$EndComp
+Text GLabel 5900 4650 0    50   Input ~ 0
+b4
+Text GLabel 5900 4550 0    50   Input ~ 0
+b3
+$Comp
+L power:GND #PWR0121
+U 1 1 623C5708
+P 6600 2650
+F 0 "#PWR0121" H 6600 2400 50  0001 C CNN
+F 1 "GND" H 6605 2477 50  0000 C CNN
+F 2 "" H 6600 2650 50  0001 C CNN
+F 3 "" H 6600 2650 50  0001 C CNN
+	1    6600 2650
+	-1   0    0    1   
+$EndComp
+Connection ~ 5700 3550
+Wire Wire Line
+	5700 1150 5700 1950
+$Comp
+L power:GND #PWR0101
+U 1 1 6294E010
+P 1300 2100
+F 0 "#PWR0101" H 1300 1850 50  0001 C CNN
+F 1 "GND" V 1305 1972 50  0000 R CNN
+F 2 "" H 1300 2100 50  0001 C CNN
+F 3 "" H 1300 2100 50  0001 C CNN
+	1    1300 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ECS-160-S-4X:ECS-160-S-4X Y1
+U 1 1 62A1BE6A
+P 1250 1400
+F 0 "Y1" V 1204 1500 50  0000 L CNN
+F 1 "ECS-160-S-4X" V 1250 700 50  0000 L CNN
+F 2 "ECS-160-S-4X:XTAL_ECS-160-S-4X" H 1250 1400 50  0001 L BNN
+F 3 "" H 1250 1400 50  0001 L BNN
+F 4 "ECS Inc." H 1250 1400 50  0001 L BNN "MANUFACTURER"
+	1    1250 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0139
+U 1 1 62A26ABA
+P 800 1600
+F 0 "#PWR0139" H 800 1350 50  0001 C CNN
+F 1 "GND" V 850 1750 50  0000 R CNN
+F 2 "" H 800 1600 50  0001 C CNN
+F 3 "" H 800 1600 50  0001 C CNN
+	1    800  1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	950  1600 800  1600
+$Comp
+L power:GND #PWR0138
+U 1 1 62A25E87
+P 800 1200
+F 0 "#PWR0138" H 800 950 50  0001 C CNN
+F 1 "GND" V 750 1350 50  0000 R CNN
+F 2 "" H 800 1200 50  0001 C CNN
+F 3 "" H 800 1200 50  0001 C CNN
+	1    800  1200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	800  1200 950  1200
+Wire Wire Line
+	1500 1600 1250 1600
+Wire Wire Line
+	1500 1500 1500 1600
+Connection ~ 1250 1600
+Wire Wire Line
+	1500 1200 1250 1200
+Wire Wire Line
+	1500 1200 1500 1300
+Connection ~ 1250 1200
+$Comp
+L sk6812mini-e_3228:SK6812MINI-E_3228 LED0
+U 1 1 6245ADF8
+P 10700 1250
+F 0 "LED0" H 10700 1617 50  0000 C CNN
+F 1 "SK6812MINI-E_3228" H 10700 1526 50  0000 C CNN
+F 2 "Keebio-Parts:SK6812-MINI-E" H 10750 950 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 10800 875 50  0001 L TNN
+	1    10700 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L sk6812mini-e_3228:SK6812MINI-E_3228 LED1
+U 1 1 624666DA
+P 9800 1250
+F 0 "LED1" H 9800 1617 50  0000 C CNN
+F 1 "SK6812MINI-E_3228" H 9800 1526 50  0000 C CNN
+F 2 "Keebio-Parts:SK6812-MINI-E" H 9850 950 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 9900 875 50  0001 L TNN
+	1    9800 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10400 1350 10250 1350
+Wire Wire Line
+	10250 1350 10250 1150
+Wire Wire Line
+	10250 1150 10100 1150
+$Comp
+L sk6812mini-e_3228:SK6812MINI-E_3228 LED2
+U 1 1 624752F2
+P 8900 1250
+F 0 "LED2" H 8900 1617 50  0000 C CNN
+F 1 "SK6812MINI-E_3228" H 8900 1526 50  0000 C CNN
+F 2 "Keebio-Parts:SK6812-MINI-E" H 8950 950 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 9000 875 50  0001 L TNN
+	1    8900 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 1150 9200 1150
+Wire Wire Line
+	9500 1350 9350 1350
+Wire Wire Line
+	9350 1350 9350 1150
+$Comp
+L power:+5V #PWR0113
+U 1 1 62482ECE
+P 7300 800
+F 0 "#PWR0113" H 7300 650 50  0001 C CNN
+F 1 "+5V" H 7250 800 50  0000 C CNN
+F 2 "" H 7300 800 50  0001 C CNN
+F 3 "" H 7300 800 50  0001 C CNN
+	1    7300 800 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 62482ED4
+P 11000 1550
+F 0 "#PWR0114" H 11000 1300 50  0001 C CNN
+F 1 "GND" H 11005 1377 50  0000 C CNN
+F 2 "" H 11000 1550 50  0001 C CNN
+F 3 "" H 11000 1550 50  0001 C CNN
+	1    11000 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L sk6812mini-e_3228:SK6812MINI-E_3228 LED3
+U 1 1 62482EDA
+P 8000 1250
+F 0 "LED3" H 8000 1617 50  0000 C CNN
+F 1 "SK6812MINI-E_3228" H 8000 1526 50  0000 C CNN
+F 2 "Keebio-Parts:SK6812-MINI-E" H 8050 950 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 8100 875 50  0001 L TNN
+	1    8000 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 1150 8300 1150
+Wire Wire Line
+	8600 1350 8450 1350
+Wire Wire Line
+	8450 1350 8450 1150
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 624D5096
+P 2550 5800
+F 0 "#FLG0101" H 2550 5875 50  0001 C CNN
+F 1 "PWR_FLAG" H 2550 5973 50  0000 C CNN
+F 2 "" H 2550 5800 50  0001 C CNN
+F 3 "~" H 2550 5800 50  0001 C CNN
+	1    2550 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0108
+U 1 1 624D654C
+P 2550 5800
+F 0 "#PWR0108" H 2550 5650 50  0001 C CNN
+F 1 "VCC" H 2567 5973 50  0000 C CNN
+F 2 "" H 2550 5800 50  0001 C CNN
+F 3 "" H 2550 5800 50  0001 C CNN
+	1    2550 5800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2850 5400 2950 5400
+Connection ~ 2850 5400
+Wire Wire Line
+	2850 5500 2800 5500
+Wire Wire Line
+	2850 5400 2850 5500
+Wire Wire Line
+	2800 5400 2850 5400
+$Comp
+L Device:R R4
+U 1 1 62604246
+P 2650 5500
+F 0 "R4" V 2750 5500 50  0000 C CNN
+F 1 "5K1" V 2650 5500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2580 5500 50  0001 C CNN
+F 3 "~" H 2650 5500 50  0001 C CNN
+	1    2650 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 629D677A
+P 2950 5400
+F 0 "#PWR0117" H 2950 5150 50  0001 C CNN
+F 1 "GND" V 2955 5272 50  0000 R CNN
+F 2 "" H 2950 5400 50  0001 C CNN
+F 3 "" H 2950 5400 50  0001 C CNN
+	1    2950 5400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 6260333E
+P 2650 5400
+F 0 "R3" V 2550 5400 50  0000 C CNN
+F 1 "5K1" V 2650 5400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2580 5400 50  0001 C CNN
+F 3 "~" H 2650 5400 50  0001 C CNN
+	1    2650 5400
+	0    1    1    0   
+$EndComp
+Text GLabel 2500 5400 0    50   Input ~ 0
+CC1
+Text GLabel 2500 5500 0    50   Input ~ 0
+CC2
+Text GLabel 2500 5800 0    50   Input ~ 0
+VBUS
+$Comp
+L Device:Polyfuse F1
+U 1 1 624FC8F5
+P 2800 5800
+F 0 "F1" V 2700 5800 50  0000 C CNN
+F 1 "500mA" V 2900 5800 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 2850 5600 50  0001 L CNN
+F 3 "~" H 2800 5800 50  0001 C CNN
+	1    2800 5800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2500 5800 2550 5800
+Connection ~ 2550 5800
+Wire Wire Line
+	2550 5800 2650 5800
+$Comp
+L power:+5V #PWR0118
+U 1 1 6252CE44
+P 2950 5800
+F 0 "#PWR0118" H 2950 5650 50  0001 C CNN
+F 1 "+5V" V 2965 5928 50  0000 L CNN
+F 2 "" H 2950 5800 50  0001 C CNN
+F 3 "" H 2950 5800 50  0001 C CNN
+	1    2950 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L Type-C:HRO-TYPE-C-31-M-12 USB1
+U 1 1 624BDABD
+P 1250 6250
+F 0 "USB1" H 1100 7100 60  0000 C CNN
+F 1 "HRO-TYPE-C-31-M-12" H 1100 7000 60  0000 C CNN
+F 2 "Type-C:HRO-TYPE-C-31-M-12-HandSoldering" H 1250 6250 60  0001 C CNN
+F 3 "" H 1250 6250 60  0001 C CNN
+	1    1250 6250
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1350 5900
+NoConn ~ 1350 6500
+$Comp
+L power:GND #PWR0153
+U 1 1 624CA6D6
+P 1350 5700
+F 0 "#PWR0153" H 1350 5450 50  0001 C CNN
+F 1 "GND" V 1355 5572 50  0000 R CNN
+F 2 "" H 1350 5700 50  0001 C CNN
+F 3 "" H 1350 5700 50  0001 C CNN
+	1    1350 5700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0154
+U 1 1 624CAEE9
+P 1350 6900
+F 0 "#PWR0154" H 1350 6650 50  0001 C CNN
+F 1 "GND" V 1355 6772 50  0000 R CNN
+F 2 "" H 1350 6900 50  0001 C CNN
+F 3 "" H 1350 6900 50  0001 C CNN
+	1    1350 6900
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1350 6000 2    50   Input ~ 0
+CC1
+Text GLabel 1350 6600 2    50   Input ~ 0
+CC2
+Text GLabel 1350 5800 2    50   Input ~ 0
+VBUS
+Text GLabel 1350 6700 2    50   Input ~ 0
+VBUS
+Text GLabel 2250 6100 2    50   Input ~ 0
+D-
+Text GLabel 2250 6200 2    50   Input ~ 0
+D+
+Wire Wire Line
+	1350 6100 1400 6100
+Wire Wire Line
+	1350 6300 1400 6300
+Wire Wire Line
+	1400 6300 1400 6100
+Connection ~ 1400 6100
+Wire Wire Line
+	1350 6200 1500 6200
+Wire Wire Line
+	1350 6400 1500 6400
+Wire Wire Line
+	1500 6400 1500 6200
+Connection ~ 1500 6200
+$Comp
+L power:GND #PWR0155
+U 1 1 6252AC2F
+P 1350 6800
+F 0 "#PWR0155" H 1350 6550 50  0001 C CNN
+F 1 "GND" V 1355 6672 50  0000 R CNN
+F 2 "" H 1350 6800 50  0001 C CNN
+F 3 "" H 1350 6800 50  0001 C CNN
+	1    1350 6800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L win:ARTWORK ART1
+U 1 1 6252FD2B
+P 5000 7000
+F 0 "ART1" H 5328 7078 60  0000 L CNN
+F 1 "ARTWORK" H 5328 6972 60  0000 L CNN
+F 2 "art:border and silhouette" H 5000 6800 60  0001 C CNN
+F 3 "" H 5000 6800 60  0001 C CNN
+	1    5000 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L win:ARTWORK ART4
+U 1 1 62593102
+P 5550 7500
+F 0 "ART4" H 5878 7578 60  0000 L CNN
+F 1 "ARTWORK" H 5878 7472 60  0000 L CNN
+F 2 "art:avenda" H 5550 7300 60  0001 C CNN
+F 3 "" H 5550 7300 60  0001 C CNN
+	1    5550 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L win:ARTWORK ART2
+U 1 1 624BE4EE
+P 4050 7400
+F 0 "ART2" H 4378 7478 60  0000 L CNN
+F 1 "ARTWORK" H 4378 7372 60  0000 L CNN
+F 2 "art:name" H 4050 7200 60  0001 C CNN
+F 3 "" H 4050 7200 60  0001 C CNN
+	1    4050 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener D19
+U 1 1 6263E3C2
+P 2000 6450
+F 0 "D19" H 1900 6650 50  0000 L CNN
+F 1 "D_Zener" H 1850 6550 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2000 6450 50  0001 C CNN
+F 3 "~" H 2000 6450 50  0001 C CNN
+	1    2000 6450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener D20
+U 1 1 6263F103
+P 1850 6450
+F 0 "D20" H 1750 6250 50  0000 L CNN
+F 1 "D_Zener" H 1700 6350 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 1850 6450 50  0001 C CNN
+F 3 "~" H 1850 6450 50  0001 C CNN
+	1    1850 6450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0157
+U 1 1 62649858
+P 2000 6600
+F 0 "#PWR0157" H 2000 6350 50  0001 C CNN
+F 1 "GND" V 2005 6472 50  0000 R CNN
+F 2 "" H 2000 6600 50  0001 C CNN
+F 3 "" H 2000 6600 50  0001 C CNN
+	1    2000 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 6600 2000 6600
+Wire Wire Line
+	1500 6200 1850 6200
+Wire Wire Line
+	1400 6100 1850 6100
+Wire Wire Line
+	1850 6300 1850 6200
+Wire Wire Line
+	2000 6300 2000 6100
+Wire Wire Line
+	2250 6200 1850 6200
+Connection ~ 1850 6200
+$Comp
+L Device:R R5
+U 1 1 626BF3C2
+P 1850 5950
+F 0 "R5" V 1750 5950 50  0000 C CNN
+F 1 "1K5" V 1850 5950 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 1780 5950 50  0001 C CNN
+F 3 "~" H 1850 5950 50  0001 C CNN
+	1    1850 5950
+	-1   0    0    1   
+$EndComp
+Connection ~ 1850 6100
+Wire Wire Line
+	1850 6100 2000 6100
+$Comp
+L power:+5V #PWR0107
+U 1 1 626C02B4
+P 1850 5800
+F 0 "#PWR0107" H 1850 5650 50  0001 C CNN
+F 1 "+5V" H 1750 5800 50  0000 C CNN
+F 2 "" H 1850 5800 50  0001 C CNN
+F 3 "" H 1850 5800 50  0001 C CNN
+	1    1850 5800
+	1    0    0    -1  
+$EndComp
+Connection ~ 2000 6100
+Connection ~ 2000 6600
+Wire Wire Line
+	2000 6100 2250 6100
+Wire Wire Line
+	7700 1150 7500 1150
+Wire Wire Line
+	10400 800  10400 1150
+Wire Wire Line
+	9500 1150 9500 800 
+Connection ~ 9500 800 
+Wire Wire Line
+	9500 800  10400 800 
+Wire Wire Line
+	8600 1150 8600 800 
+Connection ~ 8600 800 
+Wire Wire Line
+	8600 800  9500 800 
+Wire Wire Line
+	7300 800  7500 800 
+Wire Wire Line
+	7500 1150 7500 800 
+Connection ~ 7500 800 
+Wire Wire Line
+	7500 800  8600 800 
+Wire Wire Line
+	8300 1350 8300 1550
+Wire Wire Line
+	8300 1550 9200 1550
+Wire Wire Line
+	11000 1550 11000 1350
+Wire Wire Line
+	10100 1350 10100 1550
+Connection ~ 10100 1550
+Wire Wire Line
+	10100 1550 11000 1550
+Wire Wire Line
+	9200 1350 9200 1550
+Connection ~ 9200 1550
+Wire Wire Line
+	9200 1550 10100 1550
+Wire Wire Line
+	8300 1550 7100 1550
+Wire Wire Line
+	7100 1550 7100 500 
+Wire Wire Line
+	7100 500  7500 500 
+Connection ~ 8300 1550
+Wire Wire Line
+	7500 500  8600 500 
+Connection ~ 7500 500 
+Wire Wire Line
+	9500 500  8600 500 
+Connection ~ 8600 500 
+Connection ~ 11000 1550
+Wire Wire Line
+	5700 4950 5900 4950
+Wire Wire Line
+	4450 3250 4950 3250
+$Comp
+L power:GND #PWR0116
+U 1 1 62950020
+P 1250 4000
+F 0 "#PWR0116" H 1250 3750 50  0001 C CNN
+F 1 "GND" H 1200 3950 50  0000 R CNN
+F 2 "" H 1250 4000 50  0001 C CNN
+F 3 "" H 1250 4000 50  0001 C CNN
+	1    1250 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 6294F041
+P 900 4000
+F 0 "#PWR0111" H 900 3750 50  0001 C CNN
+F 1 "GND" H 850 3950 50  0000 R CNN
+F 2 "" H 900 4000 50  0001 C CNN
+F 3 "" H 900 4000 50  0001 C CNN
+	1    900  4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L planck-thk-cache:+5V #PWR0123
+U 1 1 62646FC7
+P 1250 4300
+F 0 "#PWR0123" H 1250 4150 50  0001 C CNN
+F 1 "+5V" V 1250 4400 50  0000 L CNN
+F 2 "" H 1250 4300 50  0001 C CNN
+F 3 "" H 1250 4300 50  0001 C CNN
+	1    1250 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L planck-thk-cache:+5V #PWR0122
+U 1 1 62646664
+P 900 4300
+F 0 "#PWR0122" H 900 4150 50  0001 C CNN
+F 1 "+5V" V 900 4400 50  0000 L CNN
+F 2 "" H 900 4300 50  0001 C CNN
+F 3 "" H 900 4300 50  0001 C CNN
+	1    900  4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C20
+U 1 1 62465F25
+P 1250 4150
+F 0 "C20" H 1300 4250 50  0000 L CNN
+F 1 "4.7uF" H 1300 4050 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 1288 4000 50  0001 C CNN
+F 3 "~" H 1250 4150 50  0001 C CNN
+	1    1250 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C19
+U 1 1 6246558A
+P 900 4150
+F 0 "C19" H 750 4250 50  0000 L CNN
+F 1 "100nF" H 650 4050 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 938 4000 50  0001 C CNN
+F 3 "~" H 900 4150 50  0001 C CNN
+	1    900  4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C18
+U 1 1 62414A0C
+P 1100 1600
+F 0 "C18" V 1350 1600 50  0000 C CNN
+F 1 "22pF" V 1250 1600 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 1138 1450 50  0001 C CNN
+F 3 "~" H 1100 1600 50  0001 C CNN
+	1    1100 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C17
+U 1 1 623FFCA7
+P 1100 1200
+F 0 "C17" V 848 1200 50  0000 C CNN
+F 1 "22pF" V 939 1200 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 1138 1050 50  0001 C CNN
+F 3 "~" H 1100 1200 50  0001 C CNN
+	1    1100 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L win:Bourns_PEC12R-4217F-S0024 S1
+U 1 1 6238D1BC
+P 6600 3150
+F 0 "S1" H 6250 2750 50  0000 R CNN
+F 1 "Bourns_PEC12R-4217F-S0024" H 7300 3550 50  0000 R CNN
+F 2 "win:PEC12R-4xxF-Sxxxx" H 6750 2700 50  0001 L CNN
+F 3 "DOCUMENTATION" H 6750 2600 50  0001 L CNN
+	1    6600 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L win:Bourns_PEC12R-4217F-S0024 S2
+U 1 1 623A78C8
+P 6500 4750
+F 0 "S2" H 6150 4350 50  0000 R CNN
+F 1 "Bourns_PEC12R-4217F-S0024" H 7200 5150 50  0000 R CNN
+F 2 "win:PEC12R-4xxF-Sxxxx" H 6650 4300 50  0001 L CNN
+F 3 "DOCUMENTATION" H 6650 4200 50  0001 L CNN
+	1    6500 4750
+	-1   0    0    1   
+$EndComp
+NoConn ~ 8050 6250
+Wire Wire Line
+	8800 6050 8800 6250
+Wire Wire Line
+	8650 6050 8800 6050
+$Comp
+L sk6812mini-e_3228:SK6812MINI-E_3228 LED16
+U 1 1 62516037
+P 8350 6150
+F 0 "LED16" H 8350 6517 50  0000 C CNN
+F 1 "SK6812MINI-E_3228" H 8350 6426 50  0000 C CNN
+F 2 "Keebio-Parts:SK6812-MINI-E" H 8400 5850 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 8450 5775 50  0001 L TNN
+	1    8350 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 6250 8800 6250
+$Comp
+L sk6812mini-e_3228:SK6812MINI-E_3228 LED15
+U 1 1 624FF574
+P 9250 6150
+F 0 "LED15" H 9250 6517 50  0000 C CNN
+F 1 "SK6812MINI-E_3228" H 9250 6426 50  0000 C CNN
+F 2 "Keebio-Parts:SK6812-MINI-E" H 9300 5850 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 9350 5775 50  0001 L TNN
+	1    9250 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0150
+U 1 1 624FF56E
+P 9600 6400
+F 0 "#PWR0150" H 9600 6150 50  0001 C CNN
+F 1 "GND" H 9605 6227 50  0000 C CNN
+F 2 "" H 9600 6400 50  0001 C CNN
+F 3 "" H 9600 6400 50  0001 C CNN
+	1    9600 6400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0149
+U 1 1 624FF568
+P 7850 5800
+F 0 "#PWR0149" H 7850 5650 50  0001 C CNN
+F 1 "+5V" H 7800 5800 50  0000 C CNN
+F 2 "" H 7850 5800 50  0001 C CNN
+F 3 "" H 7850 5800 50  0001 C CNN
+	1    7850 5800
+	0    -1   -1   0   
+$EndComp
+Text GLabel 9550 6050 2    50   Input ~ 0
+RGB_LEDR3to4
+$Comp
+L Device:C C3
+U 1 1 6279495F
+P 7500 650
+F 0 "C3" V 7248 650 50  0000 C CNN
+F 1 "0.1uF" V 7339 650 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 7538 500 50  0001 C CNN
+F 3 "~" H 7500 650 50  0001 C CNN
+	1    7500 650 
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 6279608A
+P 8600 650
+F 0 "C2" V 8348 650 50  0000 C CNN
+F 1 "0.1uF" V 8439 650 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 8638 500 50  0001 C CNN
+F 3 "~" H 8600 650 50  0001 C CNN
+	1    8600 650 
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 627966E3
+P 9500 650
+F 0 "C1" V 9248 650 50  0000 C CNN
+F 1 "0.1uF" V 9339 650 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 9538 500 50  0001 C CNN
+F 3 "~" H 9500 650 50  0001 C CNN
+	1    9500 650 
+	-1   0    0    1   
+$EndComp
+Text GLabel 3150 3600 2    50   Input ~ 0
+RGB_LED_DAT
+$Comp
+L sk6812mini-e_3228:SK6812MINI-E_3228 LED8
+U 1 1 624ABAA6
+P 9800 3950
+F 0 "LED8" H 9800 4317 50  0000 C CNN
+F 1 "SK6812MINI-E_3228" H 9800 4226 50  0000 C CNN
+F 2 "Keebio-Parts:SK6812-MINI-E" H 9850 3650 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 9900 3575 50  0001 L TNN
+	1    9800 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L sk6812mini-e_3228:SK6812MINI-E_3228 LED9
+U 1 1 624ABABB
+P 8900 3950
+F 0 "LED9" H 8900 4317 50  0000 C CNN
+F 1 "SK6812MINI-E_3228" H 8900 4226 50  0000 C CNN
+F 2 "Keebio-Parts:SK6812-MINI-E" H 8950 3650 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 9000 3575 50  0001 L TNN
+	1    8900 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L sk6812mini-e_3228:SK6812MINI-E_3228 LED10
+U 1 1 624ABAD0
+P 8000 3950
+F 0 "LED10" H 8000 4317 50  0000 C CNN
+F 1 "SK6812MINI-E_3228" H 8000 4226 50  0000 C CNN
+F 2 "Keebio-Parts:SK6812-MINI-E" H 8050 3650 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 8100 3575 50  0001 L TNN
+	1    8000 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L sk6812mini-e_3228:SK6812MINI-E_3228 LED11
+U 1 1 624D724F
+P 8000 4850
+F 0 "LED11" H 8000 4483 50  0000 C CNN
+F 1 "SK6812MINI-E_3228" H 8000 4574 50  0000 C CNN
+F 2 "Keebio-Parts:SK6812-MINI-E" H 8050 4550 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 8100 4475 50  0001 L TNN
+	1    8000 4850
+	-1   0    0    1   
+$EndComp
+Text GLabel 11000 4750 2    50   Input ~ 0
+RGB_LEDR3to4
+$Comp
+L sk6812mini-e_3228:SK6812MINI-E_3228 LED14
+U 1 1 624BE360
+P 10700 4850
+F 0 "LED14" H 10700 4483 50  0000 C CNN
+F 1 "SK6812MINI-E_3228" H 10700 4574 50  0000 C CNN
+F 2 "Keebio-Parts:SK6812-MINI-E" H 10750 4550 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 10800 4475 50  0001 L TNN
+	1    10700 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L sk6812mini-e_3228:SK6812MINI-E_3228 LED13
+U 1 1 624BE34B
+P 9800 4850
+F 0 "LED13" H 9800 4483 50  0000 C CNN
+F 1 "SK6812MINI-E_3228" H 9800 4574 50  0000 C CNN
+F 2 "Keebio-Parts:SK6812-MINI-E" H 9850 4550 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 9900 4475 50  0001 L TNN
+	1    9800 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L sk6812mini-e_3228:SK6812MINI-E_3228 LED12
+U 1 1 624BE336
+P 8900 4850
+F 0 "LED12" H 8900 4483 50  0000 C CNN
+F 1 "SK6812MINI-E_3228" H 8900 4574 50  0000 C CNN
+F 2 "Keebio-Parts:SK6812-MINI-E" H 8950 4550 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 9000 4475 50  0001 L TNN
+	1    8900 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L sk6812mini-e_3228:SK6812MINI-E_3228 LED7
+U 1 1 6249D34A
+P 10700 2450
+F 0 "LED7" H 10700 2083 50  0000 C CNN
+F 1 "SK6812MINI-E_3228" H 10700 2174 50  0000 C CNN
+F 2 "Keebio-Parts:SK6812-MINI-E" H 10750 2150 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 10800 2075 50  0001 L TNN
+	1    10700 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L sk6812mini-e_3228:SK6812MINI-E_3228 LED6
+U 1 1 6249D335
+P 9800 2450
+F 0 "LED6" H 9800 2083 50  0000 C CNN
+F 1 "SK6812MINI-E_3228" H 9800 2174 50  0000 C CNN
+F 2 "Keebio-Parts:SK6812-MINI-E" H 9850 2150 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 9900 2075 50  0001 L TNN
+	1    9800 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L sk6812mini-e_3228:SK6812MINI-E_3228 LED5
+U 1 1 6249D320
+P 8900 2450
+F 0 "LED5" H 8900 2083 50  0000 C CNN
+F 1 "SK6812MINI-E_3228" H 8900 2174 50  0000 C CNN
+F 2 "Keebio-Parts:SK6812-MINI-E" H 8950 2150 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 9000 2075 50  0001 L TNN
+	1    8900 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L sk6812mini-e_3228:SK6812MINI-E_3228 LED4
+U 1 1 6249D30E
+P 8000 2450
+F 0 "LED4" H 8000 2083 50  0000 C CNN
+F 1 "SK6812MINI-E_3228" H 8000 2174 50  0000 C CNN
+F 2 "Keebio-Parts:SK6812-MINI-E" H 8050 2150 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 8100 2075 50  0001 L TNN
+	1    8000 2450
+	-1   0    0    1   
+$EndComp
+Text GLabel 7700 4950 0    50   Input ~ 0
+RGB_LEDR2to3
+Connection ~ 4450 4850
+Wire Wire Line
+	4450 4850 4950 4850
+Wire Wire Line
+	4950 4850 5700 4850
+Connection ~ 4950 4850
+Text GLabel 7700 2550 0    50   Input ~ 0
+RGB_LEDR0to1
+Text GLabel 11000 2350 2    50   Input ~ 0
+RGB_LEDR1to2
+Wire Wire Line
+	9200 2550 9200 2750
+Wire Wire Line
+	10100 2550 10100 2750
+Wire Wire Line
+	11000 2750 11000 2550
+Wire Wire Line
+	8300 2550 8300 2750
+$Comp
+L Device:C C6
+U 1 1 627D84D4
+P 10100 2900
+F 0 "C6" V 9848 2900 50  0000 C CNN
+F 1 "0.1uF" V 9939 2900 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 10138 2750 50  0001 C CNN
+F 3 "~" H 10100 2900 50  0001 C CNN
+	1    10100 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 627D84CE
+P 9200 2900
+F 0 "C5" V 8948 2900 50  0000 C CNN
+F 1 "0.1uF" V 9039 2900 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 9238 2750 50  0001 C CNN
+F 3 "~" H 9200 2900 50  0001 C CNN
+	1    9200 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 627D84C8
+P 8300 2900
+F 0 "C4" V 8048 2900 50  0000 C CNN
+F 1 "0.1uF" V 8139 2900 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 8338 2750 50  0001 C CNN
+F 3 "~" H 8300 2900 50  0001 C CNN
+	1    8300 2900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7500 2000 8600 2000
+Wire Wire Line
+	7500 2350 7500 2000
+Wire Wire Line
+	8600 2000 9500 2000
+Connection ~ 8600 2000
+Wire Wire Line
+	8600 2350 8600 2000
+Wire Wire Line
+	9500 2000 10400 2000
+Connection ~ 9500 2000
+Wire Wire Line
+	9500 2350 9500 2000
+Wire Wire Line
+	10400 2000 10400 2350
+Wire Wire Line
+	7700 2350 7500 2350
+Wire Wire Line
+	8450 2550 8450 2350
+Wire Wire Line
+	8600 2550 8450 2550
+Wire Wire Line
+	8450 2350 8300 2350
+$Comp
+L power:GND #PWR0102
+U 1 1 627D84AD
+P 11000 2000
+F 0 "#PWR0102" H 11000 1750 50  0001 C CNN
+F 1 "GND" H 11005 1827 50  0000 C CNN
+F 2 "" H 11000 2000 50  0001 C CNN
+F 3 "" H 11000 2000 50  0001 C CNN
+	1    11000 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0103
+U 1 1 627D84A7
+P 7950 2750
+F 0 "#PWR0103" H 7950 2600 50  0001 C CNN
+F 1 "+5V" H 7900 2750 50  0000 C CNN
+F 2 "" H 7950 2750 50  0001 C CNN
+F 3 "" H 7950 2750 50  0001 C CNN
+	1    7950 2750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9350 2550 9350 2350
+Wire Wire Line
+	9500 2550 9350 2550
+Wire Wire Line
+	9350 2350 9200 2350
+Wire Wire Line
+	10250 2350 10100 2350
+Wire Wire Line
+	10250 2550 10250 2350
+Wire Wire Line
+	10400 2550 10250 2550
+Connection ~ 8600 3200
+Wire Wire Line
+	9500 3200 8600 3200
+Connection ~ 7500 3200
+Wire Wire Line
+	7500 3200 8600 3200
+Connection ~ 8300 4250
+Wire Wire Line
+	7100 3200 7500 3200
+Wire Wire Line
+	7100 4250 7100 3200
+Wire Wire Line
+	8300 4250 7100 4250
+Wire Wire Line
+	9200 4250 10100 4250
+Connection ~ 9200 4250
+Wire Wire Line
+	9200 4050 9200 4250
+Wire Wire Line
+	8300 4250 9200 4250
+Wire Wire Line
+	8300 4050 8300 4250
+$Comp
+L Device:C C8
+U 1 1 6293E16C
+P 9500 3350
+F 0 "C8" V 9248 3350 50  0000 C CNN
+F 1 "0.1uF" V 9339 3350 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 9538 3200 50  0001 C CNN
+F 3 "~" H 9500 3350 50  0001 C CNN
+	1    9500 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C9
+U 1 1 6293E172
+P 8600 3350
+F 0 "C9" V 8348 3350 50  0000 C CNN
+F 1 "0.1uF" V 8439 3350 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 8638 3200 50  0001 C CNN
+F 3 "~" H 8600 3350 50  0001 C CNN
+	1    8600 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 6293E178
+P 7500 3350
+F 0 "C10" V 7248 3350 50  0000 C CNN
+F 1 "0.1uF" V 7339 3350 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 7538 3200 50  0001 C CNN
+F 3 "~" H 7500 3350 50  0001 C CNN
+	1    7500 3350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7500 3500 8600 3500
+Connection ~ 7500 3500
+Wire Wire Line
+	7500 3850 7500 3500
+Wire Wire Line
+	7300 3500 7500 3500
+Wire Wire Line
+	8600 3500 9500 3500
+Connection ~ 8600 3500
+Wire Wire Line
+	8600 3850 8600 3500
+Connection ~ 9500 3500
+Wire Wire Line
+	9500 3850 9500 3500
+Wire Wire Line
+	7700 3850 7500 3850
+Wire Wire Line
+	8450 4050 8450 3850
+Wire Wire Line
+	8600 4050 8450 4050
+Wire Wire Line
+	8450 3850 8300 3850
+$Comp
+L power:+5V #PWR0105
+U 1 1 6293E18C
+P 7300 3500
+F 0 "#PWR0105" H 7300 3350 50  0001 C CNN
+F 1 "+5V" H 7250 3500 50  0000 C CNN
+F 2 "" H 7300 3500 50  0001 C CNN
+F 3 "" H 7300 3500 50  0001 C CNN
+	1    7300 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9350 4050 9350 3850
+Wire Wire Line
+	9500 4050 9350 4050
+Wire Wire Line
+	9350 3850 9200 3850
+Wire Wire Line
+	10100 4250 10100 4050
+$Comp
+L power:GND #PWR0106
+U 1 1 62956AA6
+P 10100 4250
+F 0 "#PWR0106" H 10100 4000 50  0001 C CNN
+F 1 "GND" H 10105 4077 50  0000 C CNN
+F 2 "" H 10100 4250 50  0001 C CNN
+F 3 "" H 10100 4250 50  0001 C CNN
+	1    10100 4250
+	0    -1   -1   0   
+$EndComp
+Connection ~ 10100 4250
+Text GLabel 10100 3850 2    50   Input ~ 0
+RGB_LEDR1to2
+Text GLabel 7700 4050 0    50   Input ~ 0
+RGB_LEDR2to3
+$Comp
+L Device:C C0
+U 1 1 62956E6D
+P 10400 650
+F 0 "C0" V 10148 650 50  0000 C CNN
+F 1 "0.1uF" V 10239 650 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 10438 500 50  0001 C CNN
+F 3 "~" H 10400 650 50  0001 C CNN
+	1    10400 650 
+	-1   0    0    1   
+$EndComp
+Connection ~ 10400 800 
+Wire Wire Line
+	9500 500  10400 500 
+Connection ~ 9500 500 
+$Comp
+L Device:C C7
+U 1 1 629636E0
+P 11000 2900
+F 0 "C7" V 10748 2900 50  0000 C CNN
+F 1 "0.1uF" V 10839 2900 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 11038 2750 50  0001 C CNN
+F 3 "~" H 11000 2900 50  0001 C CNN
+	1    11000 2900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9200 4950 9200 5150
+Wire Wire Line
+	10100 4950 10100 5150
+$Comp
+L Device:C C13
+U 1 1 6297B6C2
+P 10100 5300
+F 0 "C13" V 9848 5300 50  0000 C CNN
+F 1 "0.1uF" V 9939 5300 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 10138 5150 50  0001 C CNN
+F 3 "~" H 10100 5300 50  0001 C CNN
+	1    10100 5300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C12
+U 1 1 6297B6C8
+P 9200 5300
+F 0 "C12" V 8948 5300 50  0000 C CNN
+F 1 "0.1uF" V 9039 5300 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 9238 5150 50  0001 C CNN
+F 3 "~" H 9200 5300 50  0001 C CNN
+	1    9200 5300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 6297B6CE
+P 8300 5300
+F 0 "C11" V 8048 5300 50  0000 C CNN
+F 1 "0.1uF" V 8139 5300 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 8338 5150 50  0001 C CNN
+F 3 "~" H 8300 5300 50  0001 C CNN
+	1    8300 5300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8450 4950 8450 4750
+Wire Wire Line
+	8600 4950 8450 4950
+Wire Wire Line
+	8450 4750 8300 4750
+$Comp
+L power:GND #PWR0109
+U 1 1 6297B6E3
+P 11000 4400
+F 0 "#PWR0109" H 11000 4150 50  0001 C CNN
+F 1 "GND" H 11005 4227 50  0000 C CNN
+F 2 "" H 11000 4400 50  0001 C CNN
+F 3 "" H 11000 4400 50  0001 C CNN
+	1    11000 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0115
+U 1 1 6297B6E9
+P 8000 5150
+F 0 "#PWR0115" H 8000 5000 50  0001 C CNN
+F 1 "+5V" H 7950 5150 50  0000 C CNN
+F 2 "" H 8000 5150 50  0001 C CNN
+F 3 "" H 8000 5150 50  0001 C CNN
+	1    8000 5150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9350 4950 9350 4750
+Wire Wire Line
+	9500 4950 9350 4950
+Wire Wire Line
+	9350 4750 9200 4750
+Wire Wire Line
+	10250 4750 10100 4750
+Wire Wire Line
+	10250 4950 10250 4750
+Wire Wire Line
+	10400 4950 10250 4950
+$Comp
+L Device:C C14
+U 1 1 6297B6F5
+P 11000 5300
+F 0 "C14" V 10748 5300 50  0000 C CNN
+F 1 "0.1uF" V 10839 5300 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 11038 5150 50  0001 C CNN
+F 3 "~" H 11000 5300 50  0001 C CNN
+	1    11000 5300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8300 4950 8300 5150
+Wire Wire Line
+	7700 4750 7700 4400
+Wire Wire Line
+	7700 4400 8600 4400
+Wire Wire Line
+	10400 4400 10400 4750
+Connection ~ 7700 4400
+Wire Wire Line
+	9500 4750 9500 4400
+Connection ~ 9500 4400
+Wire Wire Line
+	9500 4400 10400 4400
+Wire Wire Line
+	8600 4750 8600 4400
+Connection ~ 8600 4400
+Wire Wire Line
+	8600 4400 9500 4400
+Wire Wire Line
+	11000 4950 11000 5150
+Wire Wire Line
+	8000 5150 8300 5150
+Connection ~ 8300 5150
+Wire Wire Line
+	8300 5150 9200 5150
+Connection ~ 11000 5150
+Connection ~ 9200 5150
+Wire Wire Line
+	9200 5150 10100 5150
+Connection ~ 10100 5150
+Wire Wire Line
+	10100 5150 11000 5150
+Wire Wire Line
+	8300 5450 9200 5450
+Connection ~ 9200 5450
+Wire Wire Line
+	9200 5450 10100 5450
+Connection ~ 10100 5450
+Wire Wire Line
+	10100 5450 11000 5450
+Wire Wire Line
+	11000 4400 10400 4400
+Connection ~ 10400 4400
+Connection ~ 8300 5450
+Wire Wire Line
+	7100 4400 7100 5450
+Wire Wire Line
+	7100 4400 7700 4400
+Wire Wire Line
+	7100 5450 8300 5450
+Connection ~ 10400 2000
+Wire Wire Line
+	11000 2000 10400 2000
+Wire Wire Line
+	7500 2000 7100 2000
+Connection ~ 7500 2000
+Wire Wire Line
+	7100 2000 7100 3050
+Connection ~ 9200 3050
+Wire Wire Line
+	9200 3050 10100 3050
+Connection ~ 10100 3050
+Wire Wire Line
+	10100 3050 11000 3050
+Connection ~ 8300 3050
+Wire Wire Line
+	8300 3050 9200 3050
+Wire Wire Line
+	7100 3050 8300 3050
+Wire Wire Line
+	9550 6250 9550 6400
+Wire Wire Line
+	9550 6400 9600 6400
+$Comp
+L Device:C C15
+U 1 1 62ADEAD7
+P 8950 5650
+F 0 "C15" V 8698 5650 50  0000 C CNN
+F 1 "0.1uF" V 8789 5650 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 8988 5500 50  0001 C CNN
+F 3 "~" H 8950 5650 50  0001 C CNN
+	1    8950 5650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C16
+U 1 1 62ADFD93
+P 8050 5650
+F 0 "C16" V 7798 5650 50  0000 C CNN
+F 1 "0.1uF" V 7889 5650 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 8088 5500 50  0001 C CNN
+F 3 "~" H 8050 5650 50  0001 C CNN
+	1    8050 5650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8050 6050 8050 5800
+Wire Wire Line
+	8950 6050 8950 5800
+Wire Wire Line
+	7850 5800 8050 5800
+Connection ~ 8950 5800
+Connection ~ 8050 5800
+Wire Wire Line
+	8050 5800 8950 5800
+Wire Wire Line
+	8950 5500 8050 5500
+Wire Wire Line
+	7700 5500 7700 6400
+Wire Wire Line
+	7700 6400 8650 6400
+Connection ~ 8050 5500
+Wire Wire Line
+	8050 5500 7700 5500
+Connection ~ 9550 6400
+Wire Wire Line
+	8650 6250 8650 6400
+Connection ~ 8650 6400
+Wire Wire Line
+	8650 6400 9550 6400
+$Comp
+L Device:R R6
+U 1 1 62B4DBAD
+P 2850 3600
+F 0 "R6" V 2750 3600 50  0000 C CNN
+F 1 "470R" V 2850 3600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 2780 3600 50  0001 C CNN
+F 3 "~" H 2850 3600 50  0001 C CNN
+	1    2850 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3000 3600 3150 3600
+Wire Wire Line
+	7950 2750 8300 2750
+Connection ~ 11000 2750
+Connection ~ 8300 2750
+Wire Wire Line
+	8300 2750 9200 2750
+Connection ~ 9200 2750
+Wire Wire Line
+	9200 2750 10100 2750
+Connection ~ 10100 2750
+Wire Wire Line
+	10100 2750 11000 2750
+Wire Wire Line
+	5700 3550 5700 4950
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX_ENTER1
+U 1 1 623AA709
+P 5550 3600
+F 0 "MX_ENTER1" H 5583 3823 60  0000 C CNN
+F 1 "MX-NoLED" H 5583 3749 20  0000 C CNN
+F 2 "MX_Only:MXOnly-2U-Hotswap" H 4925 3575 60  0001 C CNN
+F 3 "" H 4925 3575 60  0001 C CNN
+	1    5550 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3350 5700 3350
+Connection ~ 5700 3350
+Wire Wire Line
+	5700 3350 5700 3550
+Wire Wire Line
+	5700 1950 5700 3350
+Wire Wire Line
+	4950 3250 5800 3250
+Connection ~ 4950 3250
+$EndSCHEMATC

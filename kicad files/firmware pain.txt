@@ -1,0 +1,10 @@
+https://www.ghost7.com/mechanical-keyboard-prototype-with-v-usb-qmk/
+make firmware
+avrdude -c avrisp -p m32 -P COM6 -v
+avrdude -c avrisp -p m32 -P COM6 -v -u -U lfuse:w:0x1F:m
+avrdude -c avrisp -p m32 -P COM6 -v -u -U hfuse:w:0xC0:m
+make flash
+
+avrdude -c avrisp -p m32 -P COM6 -U flash:r:-:i
+
+cd /c/Users/Rohan/Documents/Projects/qmk_firmware/

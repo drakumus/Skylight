@@ -1,0 +1,13 @@
+(sym_lib_table
+  (lib (name "mkl27z256vfm4")(type "Legacy")(uri "${KIPRJMOD}/libraries/kicad_lib_tmk/mkl27z256vfm4.lib")(options "")(descr ""))
+  (lib (name "MX_Alps_Hybrid")(type "Legacy")(uri "${KIPRJMOD}/libraries/MX_Alps_Hybrid/Schematic Library/MX_Alps_Hybrid.lib")(options "")(descr ""))
+  (lib (name "promicro")(type "Legacy")(uri "${KIPRJMOD}/libraries/ProMicroKiCad/promicro_library/promicro.lib")(options "")(descr ""))
+  (lib (name "random-keyboard-parts")(type "Legacy")(uri "${KIPRJMOD}/libraries/random-keyboard-parts.pretty/Schematic Library/random-keyboard-parts.lib")(options "")(descr ""))
+  (lib (name "Type-C")(type "Legacy")(uri "${KIPRJMOD}/libraries/Type-C.pretty/Type-C.lib")(options "")(descr ""))
+  (lib (name "win")(type "Legacy")(uri "${KIPRJMOD}/libraries/kicad-library-win/win.lib")(options "")(descr ""))
+  (lib (name "keyboard_parts")(type "Legacy")(uri "${KIPRJMOD}/libraries/kicad_lib_tmk/keyboard_parts.lib")(options "")(descr ""))
+  (lib (name "USB4085-GF-A_REVA")(type "Legacy")(uri "${KIPRJMOD}/libraries/USB4085-GF-A_REVA/USB4085-GF-A_REVA.lib")(options "")(descr ""))
+  (lib (name "planck-thk-cache")(type "Legacy")(uri "C:/Users/Rohan/Documents/GitHub/planck_thk/planck-thk-cache.lib")(options "")(descr "")(disabled))
+  (lib (name "ECS-160-S-4X")(type "Legacy")(uri "${KIPRJMOD}/libraries/ECS-160-S-4X/ECS-160-S-4X.lib")(options "")(descr ""))
+  (lib (name "base-rescue")(type "Legacy")(uri "${KIPRJMOD}/libraries/base-rescue.lib")(options "")(descr ""))
+)
