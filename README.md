@@ -1,9 +1,10 @@
 # About
-This is a numpad with two rotary encoders using ATMEGA32a-PU Microcontroller.
+This is Skylight, a numpad with two rotary encoders using ATMEGA32a-PU Microcontroller.
 
-# Project Layout
+# Project Details
 ## case
 `case` the files used to laser cut my case out of acrylic and stainless steel. SendCutSend was a responsive and friendly service I used with reasonable prices, so I'd recommend contacting them.
+![case](https://github.com/drakumus/Skylight/blob/master/photos/fusion360.png)
 ### Files Required for Fabrication:
 ```
 x1	bottom plate (closed).dxf 	- 3mm acrylic
@@ -20,7 +21,7 @@ I've included my confuration of the loader with instructions to use below.
 
 **NOTE:** Flashing on windows requires avrdude. The sourceforge version of Avrdude that I will not link to **DELETES YOUR PATH ENVIRONMENT VARIABLE**. I did this twice on two different installs of windows before figuring it out. I hope you find a better way to install. You may have better luck with choco package manager for windows but the current version on there is 6.3 which requires custom drivers you must place manually in your system32 folder. The other option is WSL however I believe there are still limitations for that to see COM ports. I hope the future has a more dev friendly approach.
 ### Requirements
- - ISP (I repurposed a Pro Micro to do this, [see qmk's guide](https://github.com/qmk/qmk_firmware/blob/master/docs/isp_flashing_guide.md]))
+ - ISP (I repurposed a Pro Micro to do this, [see qmk's guide](https://github.com/qmk/qmk_firmware/blob/master/docs/isp_flashing_guide.md))
  - Avrdude
  - Git Bash (other WSL consoles probably work)
 ### Loading the Bootloader
@@ -68,6 +69,7 @@ In order for via to work with this board you must:
 You now can modify the button controls in via instead of building your own qmk hex!
 ![Via](https://github.com/drakumus/Skylight/blob/master/photos/Via.png)
 ## kicad files
+![pcb](https://github.com/drakumus/Skylight/blob/master/photos/pcb_design.png)
 This folder contains the kicad project and its dependancies.
 **Note:** You must clone recursively to get the submodule requirements for the kicad dependencies to load properly.
 ### Files Required for Fabrication
