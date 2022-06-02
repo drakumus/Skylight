@@ -4,3 +4,6 @@
 [submodule "kicad files/libraries/ProMicroKiCad"]
 	path = kicad files/libraries/ProMicroKiCad
 	url = https://github.com/Biacco42/ProMicroKiCad.git
+[submodule "kicad files/libraries/kicad-library-win"]
+	path = kicad files/libraries/kicad-library-win
+	url = https://github.com/windsorschmidt/kicad-library-win.git
